@@ -17,6 +17,7 @@ import {
   ParamListBase,   
 } from '@react-navigation/native';
 import { useForm } from 'react-hook-form';
+import { useAuth } from '../../hooks/auth';
 
 import { InputForm } from '../../components/Forms/InputForm';
 import { Button } from '../../components/Forms/Button';
@@ -50,7 +51,9 @@ export function Register() {
     const [transactionType, setTransactionType] = useState('');
     const [categoryModalOpen, setCategoryModalOpen ] = useState(false);
    
-    const dataKey = '@gofinances:transactions';
+    const { user } = useAuth();
+
+    const dataKey = `@gofinances:transactions_user:${user.id}`;
    
     const [category, setCategory] = useState({
         key: 'category',
