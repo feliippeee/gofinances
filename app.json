@@ -1,13 +1,22 @@
 {
   "expo": {
-    "name": "gofinances",
+    "name": "Gofinances",
+    "icon": "./assets/icon.png",
     "slug": "gofinances",
     "scheme": "gofinances",
     "version": "1.0.0",
     "owner": "felipe_marques",
     "assetBundlePatterns": [
       "**/*"
-    ]
+    ],
+    "description": "",
+    "githubUrl": "https://github.com/feliippeee/gofinances"
   },
-  "name": "gofinances"
+  "splash": {
+    "image": "./assets/splash.png",
+    "resizeMode": "contain",
+    "backgroundColor": "#5636D3"
+  },
+  "name": "gofinances",
+  "displayName": "Gofinances"
 }
